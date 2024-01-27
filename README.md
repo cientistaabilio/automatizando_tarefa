@@ -7,3 +7,7 @@ Código para executar programas de forma automático, no caso acessar um arquivo
 time.sleep(5) # Isso faz o código aguardar 5 segundos, assim vc pode mover o mouse até a janela/aba e deixar o ponteiro parado para saber a posição
 pyautogui.position()#Ele irá retornar o x e y da posição do mouse e assim basta copiar e substituir o x e y da linha 19
 ```
+Esse código é baseado no canal do youtube.
+[HashTag Treinamentos](https://www.youtube.com/@HashtagTreinamentos)
+
+Pode haver alguma modificações e o objetivo do código é o autoconhecimento.
