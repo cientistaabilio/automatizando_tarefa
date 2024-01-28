@@ -10,6 +10,7 @@ pyautogui.position()#Ele irá retornar o x e y da posição do mouse e assim bas
 
 ```py
 # caso precise selecionar a aba sem ser a primeira
+# o r antes do endereço garante que o python irá executar independente se for com / ou \.
 tabela = pd.read_excel(r"C://Users/Abilio/Downloads/Vendas - Dez.xlsx", sheets=2)
 
 ````
