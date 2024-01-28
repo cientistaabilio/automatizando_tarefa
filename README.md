@@ -2,30 +2,29 @@
 
 ### Desafio:
 
-Todos os dias, o nosso sistema atualiza as vendas do dia anterior.
-O seu trabalho diário, como analista, é enviar um e-mail para a diretoria, assim que começar a trabalhar, com o faturamento e a quantidade de produtos vendidos no dia anterior
+Rotineiramente, o sistema atualiza as vendas do dia anterior, e como analista, sua tarefa diária é enviar um e-mail à diretoria assim que iniciar o trabalho, contendo o faturamento e a quantidade de produtos vendidos no dia anterior.
 
 E-mail da diretoria: seugmail+diretoria@gmail.com<br>
-Local onde o sistema disponibiliza as vendas do dia anterior: https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga?usp=sharing
+Local dos Dados de Vendas: https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga?usp=sharing
 
-Para resolver isso, vamos usar o pyautogui, uma biblioteca de automação de comandos do mouse e do teclado
+Para automatizar esse processo, utilizaremos o pyautogui, uma biblioteca de automação de comandos do mouse e teclado.
 
-Comandos pyautogui: https://pyautogui.readthedocs.io/en/latest/quickstart.html
+[Documentação do PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/quickstart.html)
 
 # Observações 
-### Achando a sua posição para mandar o click - no meu caso eu usei o google colab pois achei prático para ficar pegando o valor.
+### Encontrando a posição para clicar - Exemplo no Google Colab
 ```py
-time.sleep(5) # Isso faz o código aguardar 5 segundos, assim vc pode mover o mouse até a janela/aba e deixar o ponteiro parado para saber a posição
-pyautogui.position()#Ele irá retornar o x e y da posição do mouse e assim basta copiar e substituir o x e y da linha 19
+time.sleep(5) # Aguarde 5 segundos para posicionar o mouse
+pyautogui.position()# Retorna as coordenadas x e y, substitua na linha 19
 ```
-
+### Selecionando uma aba específica em caso de múltiplas abas no Excel
 ```py
-# caso precise selecionar a aba sem ser a primeira
 # o r antes do endereço garante que o python irá executar independente se for com / ou \.
+# Use se precisar selecionar uma aba específica (sheets=2 indica a terceira aba, por exemplo)
 tabela = pd.read_excel(r"C://Users/Abilio/Downloads/Vendas - Dez.xlsx", sheets=2)
 
 ````
-Esse código é baseado no canal do youtube.
+Este código foi inspirado no canal do YouTube 
 [HashTag Treinamentos](https://www.youtube.com/@HashtagTreinamentos)
 
-Pode haver alguma modificações e o objetivo do código é o autoconhecimento.
+Pode sofrer modificações e seu propósito é o autoconhecimento.
